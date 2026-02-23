@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secret</title>
+  <script>
+    function checkCode() {
+      var code = document.getElementById("code").value;
+      if(code === "2112") {
+        document.body.innerHTML = "<h1 style='text-align:center;margin-top:100px;font-family:sans-serif;'>รักตุ๊บป่องที่สุดในโลกเลยนะ ❤️</h1>";
+      } else {
+        alert("รหัสผิดนะะะ");
+      }
+    }
+  </script>
+</head>
+<body style="text-align:center;margin-top:100px;font-family:sans-serif;">
+  <h2>ใส่รหัสก่อนเข้า</h2>
+  <input type="password" id="code" placeholder="ใส่รหัส">
+  <button onclick="checkCode()">ยืนยัน</button>
+</body>
+</html>
